@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #FFCB05;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #2A75BB;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Section */
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background: #F8F8FF;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Search Input */
+input {
+    font-size: 1rem;
+    width: 80%;
+    height: 5vh;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ff6600;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #FFCB05;
+    box-shadow: 0px 0px 8px rgba(255, 203, 5, 0.7);
+}
+
+/* Pokémon Card */
+div {
+    background: linear-gradient(135deg, #ffffff, #ffebcc);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+div:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Pokémon Image */
+img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+
+/* Pokémon Type */
+p {
+    background: #FFCB05;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+h2 {
+    margin-top: 5vh;
+
+}
+h6{
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 5%;
+}
+h4{
+    font-size:2rem;
+}
+h3{
+font-size: 2rem;
+}
